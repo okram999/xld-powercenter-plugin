@@ -27,9 +27,9 @@
 
 <!--FOLDERMAP matches the folders in the imported file with the folders in the target repository -->
 
-<IMPORTPARAMS CHECKIN_AFTER_IMPORT="YES" CHECKIN_COMMENTS="XL Deploy Test" RETAIN_GENERATED_VALUE="YES" COPY_SAP_PROGRAM="YES" APPLY_DEFAULT_CONNECTION="NO">  
+<IMPORTPARAMS CHECKIN_AFTER_IMPORT="YES" CHECKIN_COMMENTS="XL Deploy Test" RETAIN_GENERATED_VALUE="YES" COPY_SAP_PROGRAM="YES" APPLY_DEFAULT_CONNECTION="NO">
 
-<#if deployed.folderNameMap?has_content>>
+<#if deployed.folderNameMap?has_content>
   <#list deployed.folderNameMap?keys as key>
 <FOLDERMAP SOURCEFOLDERNAME="${key}" SOURCEREPOSITORYNAME="${deployed.sourceRepository}" TARGETFOLDERNAME="${deployed.folderNameMap[key]}" TARGETREPOSITORYNAME="${deployed.container.repository}"/>
   </#list>
@@ -48,6 +48,7 @@
 <!--TYPEOBJECT OBJECTTYPENAME="ALL" RESOLUTION="REPLACE"/ -->
 
 <TYPEOBJECT OBJECTTYPENAME="ALL" RESOLUTION="REPLACE"/>
+<TYPEOBJECT OBJECTTYPENAME="SessionConfig" RESOLUTION="REUSE"/> 
 
 </RESOLVECONFLICT>
 
