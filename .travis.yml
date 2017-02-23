@@ -1,14 +1,20 @@
 language: java
-notifications:
-  hipchat:
-    rooms:
-      secure: Ke9fMBOvj4NJeNw1+HBCNkMy+PdgQQoa8g+Rs5ldP9dIcPwSKFQFUha8v4N3NNVpDpJo1vStRfik5V974QkCHzWYvIJjDwh4LMNIJlSs+c9mMvVm3iYq/4ZY56hIxDyZe/wstao/FbLsl2BsSb0Tw3x2KgeuwZ+3CNZfqt5Pcuw=
+
 deploy:
   provider: releases
   api_key:
-    secure: ZVBw8EHIaJxaTG6pTMsskCE6OQuFk/YOyfat0lNDQWmMHB/RO8wS5YlmAZTgkEqWyKtR76Fs7ktPMe1ETVymUCZEHgjH0aqiidyqMpIsrKT+yyV1HrQTjjDCOmQN0759Bm7MwAehDCodiMPwbmabdxxIyAcdI5PtmfE11ZIjHsU=
-  file: build/distributions/xld-powercenter-plugin-1.1.0.xldp
+    secure: "cylayjjpkt5nK8sx9rL9WwcEBRysZwUEGn2mskfQek1ieTLMzoyAdAS6LLl1lT/nqdWA7
+hgCcriBq1kBUaRv4yXeNfeBQRTXsnmKtvhTMmIuchUoCMjruHkbA/hA3qouZVrD7ExuJe8PKzllLTI1q
+8NFYB//yIJoXCW+WhM5Vq7J5zEz0fAyYvoaOJmMmlegFwavJC339rRSIyFrQi4bYRXeFJxtP+3xGZcTf
+ZKsxQ1s2NVUQDGCspx9SPrOe2Y+5FeW4p+zLSlrssGrOj+EXFP7cyR+V95rdFl6Ni5Uu+J3a9xUwYADd
+KQvAopXwqQh08U4m6/1cbJ8Q8ZAnH9RJjgxmXU6SjU6ZNdBym+CqINXyVh57HEtFEn3/opGV7o9X/ia8
+B36UXc61uDC40CQLsMbiZRbcV/rxH9RM8qkNAd1U+KA93z2B/XpMzUQK4+jiJ22+fhn5zHCxD0dpe8Wv
+B6CiIqhPNyZFiQsm5wFQZAMDFMoiLWfRN0ZVbjcXRN/j2X9W9WJA5PeLoTahATtQwnFlwMchqECV315F
+RsTARRfQG3Ehao6HnrVLHtEIkm9vlOV1jgVcIrAZNmANg7pKIhKeOkQ6qjU36Gha22QEo/DlGC1hdjMO
+beC7/ebDyK9MdWVRLIwHlDvapPxkurjxwjotfav7wQIY7L2ZYbb/Po="
+
+  file: build/distributions/xld-powercenter-plugin-1.1.3.xldp
   on:
     all_branches: true
     tags: true
-    repo: xebialabs-community/xld-powercenter-plugin
+    repo: okram999/xld-powercenter-plugin
